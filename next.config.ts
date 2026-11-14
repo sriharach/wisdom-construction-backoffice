@@ -1,6 +1,7 @@
 import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
+  basePath: '/construction-backoffice',
   env: {
     API_URL: process.env.API_URL || 'http://localhost:8000/api',
     AMOUNT_LIMIT_IMAGE: process.env.AMOUNT_LIMIT_IMAGE,
@@ -10,7 +11,7 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: process.env.NODE_ENV === 'development',
     path: '/_next/image',
-  },
+  }
 };
 
 export default nextConfig;

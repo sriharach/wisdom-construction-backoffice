@@ -1,8 +1,11 @@
 'use client';
 import React from 'react';
+import { useRouter } from 'next/navigation';
 export default function Home() {
+  const router = useRouter();
+
   React.useEffect(() => {
-    window.location.href = '/sign-in';
+    router.push('/sign-in');
   }, []);
 
   return <React.Fragment />

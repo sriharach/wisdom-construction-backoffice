@@ -10,7 +10,7 @@ const AuthLayout = ({ children }: AuthLayoutProps) => {
           draggable={false}
           width={600}
           height={600}
-          src="/pattern_react.webp"
+          src="/construction-backoffice/pattern_react.webp"
           alt="gradient"
         />
       </div>
